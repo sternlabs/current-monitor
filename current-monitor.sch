@@ -1,0 +1,295 @@
+EESchema Schematic File Version 2
+LIBS:fuse
+LIBS:schottky
+LIBS:max6070
+LIBS:ltc3260
+LIBS:lm27313
+LIBS:lt6106
+LIBS:-vs
+LIBS:+vs
+LIBS:+3v
+LIBS:-15v
+LIBS:+15v
+LIBS:com
+LIBS:sip32401a
+LIBS:pnp
+LIBS:phone-3
+LIBS:npn
+LIBS:esp-12
+LIBS:conn-8
+LIBS:conn-7
+LIBS:conn-6
+LIBS:conn-5
+LIBS:conn-3
+LIBS:bat
+LIBS:aat1217
+LIBS:jumper
+LIBS:pmos
+LIBS:pot
+LIBS:buck-sot23-5
+LIBS:tp4056
+LIBS:xtal
+LIBS:vutmi
+LIBS:vpll
+LIBS:vout
+LIBS:vio
+LIBS:vin
+LIBS:vcore
+LIBS:vbu
+LIBS:varef
+LIBS:vana
+LIBS:usb334x
+LIBS:usb
+LIBS:ts3usb31
+LIBS:tps27081a
+LIBS:tpd4s012
+LIBS:tlv713
+LIBS:thermistor
+LIBS:testpoint
+LIBS:test
+LIBS:tactile-4
+LIBS:spiflash
+LIBS:solder-jumper-nc
+LIBS:sit1602
+LIBS:r4
+LIBS:r
+LIBS:pwr
+LIBS:power_flag
+LIBS:nmos
+LIBS:mpu6050
+LIBS:mpu-6050
+LIBS:mpl3115a2
+LIBS:mounting-hole
+LIBS:mounthole
+LIBS:microsd
+LIBS:mic5205
+LIBS:mchck
+LIBS:max9938
+LIBS:mag3110
+LIBS:lpddrx16
+LIBS:lm3671
+LIBS:led
+LIBS:l
+LIBS:jtag
+LIBS:ip425xcz12
+LIBS:ina199
+LIBS:gnd
+LIBS:ferrite
+LIBS:drv883x
+LIBS:debugheader
+LIBS:d
+LIBS:cp
+LIBS:conn-4
+LIBS:conn-2x5
+LIBS:conn-2
+LIBS:cm1624
+LIBS:c
+LIBS:ant
+LIBS:USB3300
+LIBS:SAM3U-144
+LIBS:ICE40HX4K-144
+LIBS:+5v
+LIBS:+3v3
+LIBS:+1v8
+LIBS:+1v2
+LIBS:in-amp
+LIBS:op-amp
+LIBS:current-monitor-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 5
+Title "High Precision Current Monitor"
+Date "Sun 16 Aug 2015"
+Rev "0"
+Comp "sternlabs"
+Comment1 "(c) 2015 Simon Schubert"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L R R101
+U 1 1 55CD3596
+P 5350 1500
+F 0 "R101" V 5550 1450 50  0000 R CNN
+F 1 "0.33" V 5450 1450 50  0000 R CNN
+F 2 "" H 5485 1340 60  0000 C CNN
+F 3 "" H 5485 1340 60  0000 C CNN
+	1    5350 1500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN-2 J101
+U 1 1 55CD3597
+P 4350 1550
+F 0 "J101" H 4600 1600 50  0000 L CNN
+F 1 "CONN-2" H 4600 1500 50  0000 L CNN
+F 2 "" H 4450 1350 60  0000 C CNN
+F 3 "" H 4450 1350 60  0000 C CNN
+	1    4350 1550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L COM #PWR01
+U 1 1 55CB8512
+P 4400 1700
+F 0 "#PWR01" V 4675 1700 60  0001 C CNN
+F 1 "COM" H 4560 1585 30  0001 C CNN
+F 2 "" H 4555 1710 60  0000 C CNN
+F 3 "" H 4555 1710 60  0000 C CNN
+	1    4400 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN-2 J102
+U 1 1 55CB8719
+P 6600 1550
+F 0 "J102" H 6850 1600 50  0000 L CNN
+F 1 "CONN-2" H 6850 1500 50  0000 L CNN
+F 2 "" H 6700 1350 60  0000 C CNN
+F 3 "" H 6700 1350 60  0000 C CNN
+	1    6600 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L COM #PWR02
+U 1 1 55CB871F
+P 6550 1700
+F 0 "#PWR02" V 6825 1700 60  0001 C CNN
+F 1 "COM" H 6710 1585 30  0001 C CNN
+F 2 "" H 6705 1710 60  0000 C CNN
+F 3 "" H 6705 1710 60  0000 C CNN
+	1    6550 1700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 1600 4400 1600
+Wire Wire Line
+	4400 1600 4400 1700
+Wire Wire Line
+	6600 1600 6550 1600
+Wire Wire Line
+	6550 1600 6550 1700
+Wire Wire Line
+	5650 1500 6600 1500
+Wire Wire Line
+	5350 1500 5300 1550
+Wire Wire Line
+	5650 1500 5700 1550
+Wire Wire Line
+	5700 1550 5700 1700
+Wire Wire Line
+	5300 1550 5300 1700
+Text Notes 5300 1200 0    60   ~ 0
+Sense R\nG=-9.6dB
+Text GLabel 5300 1700 3    60   Output ~ 0
+SENSE+
+Text GLabel 5700 1700 3    60   Output ~ 0
+SENSE-
+$Sheet
+S 4900 2900 1900 650 
+U 55CD3F2D
+F0 "Current Sense Fine Range" 60
+F1 "sense-fine.sch" 60
+F2 "SENSE+" I L 4900 3050 60 
+F3 "SENSE-" I L 4900 3350 60 
+F4 "SENSE_FINE" O R 6800 3050 60 
+F5 "REF_ADJUST" I R 6800 3350 60 
+$EndSheet
+$Sheet
+S 4900 4400 1950 650 
+U 55CD3FB8
+F0 "Current Sense Coarse Range" 60
+F1 "sense-coarse.sch" 60
+F2 "SENSE+" I L 4900 4550 60 
+F3 "SENSE-" I L 4900 4850 60 
+F4 "SENSE_COARSE" O R 6850 4550 60 
+$EndSheet
+Text GLabel 4600 3050 0    60   Input ~ 0
+SENSE+
+Text GLabel 4600 3350 0    60   Input ~ 0
+SENSE-
+Wire Wire Line
+	4600 3050 4900 3050
+Wire Wire Line
+	4600 3350 4900 3350
+Text GLabel 4600 4550 0    60   Input ~ 0
+SENSE+
+Text GLabel 4600 4850 0    60   Input ~ 0
+SENSE-
+Wire Wire Line
+	4600 4550 4900 4550
+Wire Wire Line
+	4600 4850 4900 4850
+$Sheet
+S 8750 5450 1400 500 
+U 55CDF9F7
+F0 "Power Supply" 60
+F1 "power.sch" 60
+F2 "VS_ENABLE" I L 8750 5700 60 
+$EndSheet
+Wire Wire Line
+	4350 1500 5350 1500
+Text Notes 4150 1250 0    40   ~ 0
+MMBZ18VALT1G TVS diodes
+$Comp
+L C C101
+U 1 1 55D21C02
+P 6000 1550
+F 0 "C101" H 6060 1485 50  0000 L CNN
+F 1 "2.2u" H 6060 1415 50  0000 L CNN
+F 2 "" H 5900 1700 60  0000 C CNN
+F 3 "" H 5900 1700 60  0000 C CNN
+	1    6000 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L COM #PWR03
+U 1 1 55D21CA3
+P 6000 1750
+F 0 "#PWR03" V 6275 1750 60  0001 C CNN
+F 1 "COM" H 6160 1635 30  0001 C CNN
+F 2 "" H 6155 1760 60  0000 C CNN
+F 3 "" H 6155 1760 60  0000 C CNN
+	1    6000 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 1550 6000 1500
+Connection ~ 6000 1500
+Text Notes 5900 2050 0    60   ~ 0
+R101 and C101 low pass filter at >100kHz
+$Comp
+L C C102
+U 1 1 55D22072
+P 5050 1550
+F 0 "C102" H 5110 1485 50  0000 L CNN
+F 1 "10u" H 5110 1415 50  0000 L CNN
+F 2 "" H 4950 1700 60  0000 C CNN
+F 3 "" H 4950 1700 60  0000 C CNN
+	1    5050 1550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L COM #PWR04
+U 1 1 55D220D7
+P 5050 1750
+F 0 "#PWR04" V 5325 1750 60  0001 C CNN
+F 1 "COM" H 5210 1635 30  0001 C CNN
+F 2 "" H 5205 1760 60  0000 C CNN
+F 3 "" H 5205 1760 60  0000 C CNN
+	1    5050 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 1550 5050 1500
+Connection ~ 5050 1500
+$Sheet
+S 3550 5650 1850 850 
+U 55D37DCB
+F0 "MCU" 40
+F1 "mcu.sch" 40
+$EndSheet
+$EndSCHEMATC
