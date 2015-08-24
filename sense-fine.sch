@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:lt6102
 LIBS:zener
 LIBS:k22f-64lqfp
 LIBS:MKL26ZxxVFM4
