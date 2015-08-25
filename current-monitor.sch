@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:conn-1
 LIBS:drdc3105
 LIBS:relay
 LIBS:lt6102
