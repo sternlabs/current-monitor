@@ -1,4 +1,4 @@
-update=Tue 25 Aug 2015 01:18:11 PM CEST
+update=Tue 25 Aug 2015 02:36:17 PM CEST
 version=1
 last_client=kicad
 [cvpcb]
@@ -6,16 +6,6 @@ version=1
 NetIExt=net
 [general]
 version=1
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=fab/
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=40
 [pcbnew]
 version=1
 PageLayoutDescrFile=
@@ -140,3 +130,13 @@ LibName98=libs.pretty/+1v8
 LibName99=libs.pretty/+1v2
 LibName100=libs.pretty/in-amp
 LibName101=libs.pretty/op-amp
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=fab/
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
