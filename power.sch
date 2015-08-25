@@ -745,10 +745,6 @@ Connection ~ 6450 1150
 Wire Wire Line
 	6450 1150 6450 1250
 Wire Wire Line
-	7450 1700 7350 1700
-Wire Wire Line
-	7350 1500 7450 1500
-Wire Wire Line
 	7450 2150 7400 2150
 Wire Wire Line
 	7150 1900 7150 1950
@@ -843,4 +839,18 @@ Wire Wire Line
 	7450 1500 7450 1550
 Wire Wire Line
 	7450 1750 7450 1700
+Text Label 2800 1200 3    40   ~ 0
+DC_SW
+Text Label 3150 1750 3    40   ~ 0
+DC_FB
+Text Label 7350 1500 2    40   ~ 0
+PUMP+
+Text Label 7350 1750 2    40   ~ 0
+PUMP-
+Wire Wire Line
+	7450 1500 7350 1500
+Wire Wire Line
+	7450 1750 7350 1750
+Wire Wire Line
+	7350 1750 7350 1700
 $EndSCHEMATC
