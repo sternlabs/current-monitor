@@ -217,8 +217,6 @@ Text GLabel 3450 4900 0    60   Input ~ 0
 SENSE+
 Wire Wire Line
 	3450 4900 3750 4900
-Text Notes 9200 3400 0    60   ~ 0
-XXX add current sense jumpers for analog and mcu
 Text GLabel 3450 1550 0    60   Output ~ 0
 SENSE+
 Text GLabel 3450 1850 0    60   Output ~ 0
