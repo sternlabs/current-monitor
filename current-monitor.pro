@@ -1,4 +1,4 @@
-update=Thu 03 Sep 2015 02:49:38 PM CEST
+update=Mon 07 Sep 2015 10:42:03 PM CEST
 version=1
 last_client=kicad
 [cvpcb]
@@ -6,25 +6,6 @@ version=1
 NetIExt=net
 [general]
 version=1
-[pcbnew]
-version=1
-PageLayoutDescrFile=
-LastNetListRead=
-PadDrill=0
-PadDrillOvalY=0
-PadSizeH=0.3
-PadSizeV=1
-PcbTextSizeV=1.5
-PcbTextSizeH=1.5
-PcbTextThickness=0.3
-ModuleTextSizeV=0.7
-ModuleTextSizeH=0.7
-ModuleTextSizeThickness=0.15
-SolderMaskClearance=0
-SolderMaskMinWidth=0
-DrawSegmentWidth=0.2
-BoardOutlineThickness=0.09999999999999999
-ModuleOutlineThickness=0.15
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
@@ -143,3 +124,22 @@ LibName101=libs.pretty/+1v8
 LibName102=libs.pretty/+1v2
 LibName103=libs.pretty/in-amp
 LibName104=libs.pretty/op-amp
+[pcbnew]
+version=1
+PageLayoutDescrFile=
+LastNetListRead=
+PadDrill=0
+PadDrillOvalY=0
+PadSizeH=1.5
+PadSizeV=0.3
+PcbTextSizeV=1.5
+PcbTextSizeH=1.5
+PcbTextThickness=0.3
+ModuleTextSizeV=0.7
+ModuleTextSizeH=0.7
+ModuleTextSizeThickness=0.06999999999999999
+SolderMaskClearance=0
+SolderMaskMinWidth=0
+DrawSegmentWidth=0.2
+BoardOutlineThickness=0.09999999999999999
+ModuleOutlineThickness=0.15
