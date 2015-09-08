@@ -1,4 +1,4 @@
-update=Mon 07 Sep 2015 10:42:03 PM CEST
+update=Tue 08 Sep 2015 05:48:00 PM CEST
 version=1
 last_client=kicad
 [cvpcb]
@@ -127,7 +127,7 @@ LibName104=libs.pretty/op-amp
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=
+LastNetListRead=current-monitor.net
 PadDrill=0
 PadDrillOvalY=0
 PadSizeH=1.5
@@ -135,11 +135,11 @@ PadSizeV=0.3
 PcbTextSizeV=1.5
 PcbTextSizeH=1.5
 PcbTextThickness=0.3
-ModuleTextSizeV=0.7
-ModuleTextSizeH=0.7
-ModuleTextSizeThickness=0.06999999999999999
-SolderMaskClearance=0
-SolderMaskMinWidth=0
-DrawSegmentWidth=0.2
+ModuleTextSizeV=0.6
+ModuleTextSizeH=0.6
+ModuleTextSizeThickness=0.06
+SolderMaskClearance=0.09999999999999999
+SolderMaskMinWidth=0.09999999999999999
+DrawSegmentWidth=0.3
 BoardOutlineThickness=0.09999999999999999
 ModuleOutlineThickness=0.15
