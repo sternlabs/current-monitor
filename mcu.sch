@@ -110,7 +110,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 7
 Title "High Precision Current Monitor"
-Date "2015-09-03"
+Date "2015-09-08"
 Rev "0"
 Comp "sternlabs"
 Comment1 "(c) 2015 Simon Schubert"
@@ -353,7 +353,7 @@ L JTAG J602
 U 1 1 55D40683
 P 7650 1300
 F 0 "J602" H 7250 950 50  0000 L CNN
-F 1 "JTAG" H 8050 950 50  0000 R CNN
+F 1 "SWD" H 8050 950 50  0000 R CNN
 F 2 "libs:CONN-2x5-1.27-SMT" H 7550 1100 50  0001 C CNN
 F 3 "" H 7550 1100 50  0000 C CNN
 	1    7650 1300
