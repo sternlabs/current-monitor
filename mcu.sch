@@ -838,9 +838,9 @@ Text HLabel 2250 6250 0    60   Output ~ 0
 RELAY_INOUT_SHORT
 Text HLabel 2250 6350 0    60   Output ~ 0
 RELAY_CALIBRATE
-Text HLabel 2250 6550 0    60   Output ~ 0
-CALIBRATE_5V
 Text HLabel 2250 6450 0    60   Output ~ 0
+CALIBRATE_5V
+Text HLabel 2250 6550 0    60   Output ~ 0
 CALIBRATE_3V
 Text HLabel 2250 6950 0    60   Output ~ 0
 CALIBRATE_30mA
