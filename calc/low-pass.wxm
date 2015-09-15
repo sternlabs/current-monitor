@@ -1,0 +1,30 @@
+/* [wxMaxima batch file version 1] [ DO NOT EDIT BY HAND! ]*/
+/* [ Created with wxMaxima version 14.12.0 ] */
+
+/* [wxMaxima: input   start ] */
+Q: sqrt(m*n)/(m+1+m*n*(1-K));
+fc: 1/(2*%pi*R*C*sqrt(m*n));
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+defs: [K=1.0, C=120e-12, n=1e-9/120e-12];
+ev([Q=1.3408, fc=100e3*0.9359]^2, defs);
+solve(append(%, defs), listofvars(append(%, defs))), numer;
+sublist(%, lambda([sol], ev(m, sol, defs) > 0 and ev(R, sol, defs) > 0 and ev(Q, defs, sol) > 0))$
+map(lambda([sol], ev([Q,fc, R, m*R, C, n*C], defs, sol)), %), numer;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+defs: [K=3.0, C=1e-9, n=1];
+ev([Q=1.3408, fc=100e3*0.9359]^2, defs);
+solve(append(%, defs), listofvars(append(%, defs))), numer;
+sublist(%, lambda([sol], ev(m, sol, defs) > 0 and ev(R, sol, defs) > 0 and ev(Q, defs, sol) > 0))$
+map(lambda([sol], ev([Q,fc, R, m*R, C, n*C], defs, sol)), %), numer;
+/* [wxMaxima: input   end   ] */
+
+/* [wxMaxima: input   start ] */
+solve([100e3*0.6970=1/(2*%pi*R*C), C=2.2e-9], [C,R]), numer;
+/* [wxMaxima: input   end   ] */
+
+/* Maxima can't load/batch files which end with a comment! */
+"Created with wxMaxima"$
