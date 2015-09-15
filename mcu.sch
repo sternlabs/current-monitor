@@ -110,8 +110,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 7
 Title "High Precision Current Monitor"
-Date "2015-09-13"
-Rev "0"
+Date "2015-09-15"
+Rev "1.0"
 Comp "sternlabs"
 Comment1 "(c) 2015 Simon Schubert"
 Comment2 ""
@@ -1057,15 +1057,15 @@ Text Label 7900 5050 3    50   ~ 0
 LED_POWER
 Wire Wire Line
 	9400 5650 9400 5050
-Text Label 9400 5050 3    50   ~ 0
+Text Label 8900 5050 3    50   ~ 0
 LED_CALIBRATE
 Wire Wire Line
 	8400 5650 8400 5050
-Text Label 8400 5050 3    50   ~ 0
+Text Label 9400 5050 3    50   ~ 0
 LED_ERROR
 Wire Wire Line
 	8900 5650 8900 5050
-Text Label 8900 5050 3    50   ~ 0
+Text Label 8400 5050 3    50   ~ 0
 LED_CAPTURE
 Wire Wire Line
 	3500 6650 4300 6650
@@ -1077,11 +1077,11 @@ Wire Wire Line
 	4300 6350 3500 6350
 Text Label 4300 6650 2    50   ~ 0
 LED_POWER
-Text Label 4300 6550 2    50   ~ 0
-LED_ERROR
 Text Label 4300 6350 2    50   ~ 0
-LED_CALIBRATE
+LED_ERROR
 Text Label 4300 6450 2    50   ~ 0
+LED_CALIBRATE
+Text Label 4300 6550 2    50   ~ 0
 LED_CAPTURE
 Wire Wire Line
 	3500 5950 4300 5950

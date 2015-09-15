@@ -110,8 +110,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 7 7
 Title "High Precision Current Monitor"
-Date "2015-09-13"
-Rev "0"
+Date "2015-09-15"
+Rev "1.0"
 Comp "sternlabs"
 Comment1 "(c) 2015 Simon Schubert"
 Comment2 ""
@@ -999,4 +999,27 @@ Wire Wire Line
 	6800 2100 6800 2150
 Wire Wire Line
 	6800 2550 6800 2600
+$Comp
+L TESTPOINT TP706
+U 1 1 55F84672
+P 1200 5850
+F 0 "TP706" H 1270 5950 50  0000 L CNN
+F 1 "GND" H 1200 6040 60  0000 C CNN
+F 2 "libs:TESTPOINT-2.0" H 1200 5850 50  0001 C CNN
+F 3 "" H 1200 5850 50  0000 C CNN
+F 4 "NOPART" H 1200 5850 60  0001 C CNN "Place"
+	1    1200 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L COM #PWR0117
+U 1 1 55F84959
+P 1200 5850
+F 0 "#PWR0117" V 1475 5850 60  0001 C CNN
+F 1 "COM" H 1360 5735 30  0001 C CNN
+F 2 "" H 1355 5860 60  0000 C CNN
+F 3 "" H 1355 5860 60  0000 C CNN
+	1    1200 5850
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

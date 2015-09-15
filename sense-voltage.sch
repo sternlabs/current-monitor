@@ -110,8 +110,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 7
 Title "High Precision Current Monitor"
-Date "2015-09-13"
-Rev "0"
+Date "2015-09-15"
+Rev "1.0"
 Comp "sternlabs"
 Comment1 "(c) 2015 Simon Schubert"
 Comment2 ""
