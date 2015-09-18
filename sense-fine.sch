@@ -1,4 +1,6 @@
 EESchema Schematic File Version 2
+LIBS:nmos-pmos-sot23-6
+LIBS:tps6040x
 LIBS:2-spst
 LIBS:max4737eud
 LIBS:conn-1
@@ -110,8 +112,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 7
 Title "High Precision Current Monitor"
-Date "2015-09-15"
-Rev "1.0"
+Date "2015-09-18"
+Rev "1.1"
 Comp "sternlabs"
 Comment1 "(c) 2015 Simon Schubert"
 Comment2 ""
